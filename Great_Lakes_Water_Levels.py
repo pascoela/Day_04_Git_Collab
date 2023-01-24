@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 """"
 To use this notebook for your in-class assignment, you will need these 
 files, which you shoujld have downloaded:
@@ -14,6 +15,9 @@ time, you're welcome to do so.
 """"
 =======
 >>>>>>> Dang
+=======
+
+>>>>>>> yu
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -24,6 +28,7 @@ import matplotlib.pyplot as plt
 # column, as a function of time years
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 mhu = pd.read_csv("mhu.csv")
@@ -32,6 +37,9 @@ plt.xlabel("Time(Years)")
 plt.ylabel("Water Levels(m)")
 plt.title("Michigan/Huron Water Levels over Time")
 >>>>>>> Dang
+=======
+
+>>>>>>> yu
 
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
@@ -42,17 +50,29 @@ plt.title("Michigan/Huron Water Levels over Time")
 # PART 3
 # Using the Erie Dataset, plot the Water Level, the second column, 
 # as a function of time years
+<<<<<<< HEAD
 
+=======
+eri = pd.read_csv('eri.csv')
+plt.plot(eri['time'], eri['water level'])
+plt.xlabel('Time(years)')
+plt.ylabel('Water Level')
+plt.title('Water Level in Lake Erie')
+>>>>>>> yu
 
 
 # PART 4
 # Using the Ontario Dataset, plot the Water Level, the second column, 
 # as a function of time years
+<<<<<<< HEAD
 ont = pd.read_csv('ont.csv')
 plt.plot(ont['year'], ont['Lake Ontario annual averages'])
 plt.xlabel('Year')
 plt.ylabel('Annual Averages')
 plt.title('Lake Ontario Annual Averages')
+=======
+
+>>>>>>> yu
 
 
 # PART 5
@@ -60,6 +80,7 @@ plt.title('Lake Ontario Annual Averages')
 # Michigan/Hurion Water Level vs Superior Water Level to see if there 
 # is any correlation between the water levels.
 
+<<<<<<< HEAD
 # +
 mhu = pd.read_csv("mhu.csv")
 mhu_average = mhu["lake average"]
@@ -73,6 +94,9 @@ plt.xlabel("Michigan Huron")
 plt.ylabel("Superior")
 
 # -
+=======
+
+>>>>>>> yu
 
 # PART 6
 # Using the Michigan/Hurion and Erie Datasets, plot the 
