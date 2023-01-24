@@ -44,6 +44,15 @@ plt.title("Michigan/Huron Water Levels over Time")
 # PART 2
 # Using the Superior Dataset, plot the Water Level, the second column, 
 # as a function of time years
+sup = pd.read_csv("sup.csv")
+
+year = sup["year"]
+water_levels = sup["lake levels"]
+
+plt.plot(year, water_levels)
+plt.xlabel("Time")
+plt.ylabel("Water Level")
+plt.title("Lake Superior Water Level over Time")
 
 
 
