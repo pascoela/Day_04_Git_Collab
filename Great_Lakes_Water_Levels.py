@@ -13,6 +13,7 @@ only expected to complete one PART below. Do not worry if your group
 is not big enough to finish all parts below, but if you have extra 
 time, you're welcome to do so.
 """"
+<<<<<<< HEAD
 =======
 >>>>>>> Dang
 =======
@@ -21,6 +22,8 @@ time, you're welcome to do so.
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+=======
+>>>>>>> bommarito
 
 
 # PART 1
@@ -103,7 +106,27 @@ plt.ylabel("Superior")
 # Michigan/Huron Water Level vs Erie Water Level to see if there is 
 # any correlation between the water levels.
 
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
 
+mhu = pd.read_csv("mhu.csv")
+mhu.head()
+
+erie = pd.read_csv("eri.csv")
+erie.head()
+
+# +
+mhu_average = mhu["lake average"]
+
+erie = pd.read_csv("eri.csv")
+erie_average = erie["water level"]
+
+plt.scatter(mhu_average, erie_average)
+plt.title("Correlation Betweeen Michigan/Huron and Erie")
+plt.xlabel("Michigan Huron")
+plt.ylabel("Erie")
+# -
 
 # PART 7
 # Using the Superior and Ontario Datasets, plot the Superior Water 
